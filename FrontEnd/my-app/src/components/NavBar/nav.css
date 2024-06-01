@@ -1,0 +1,140 @@
+.Link_navs:hover {
+  /* background: #666; */
+  background: #eee;
+  /* border-radius: 5%; */
+  transition: 0.5s;
+  /* color: #147a44; */
+  color: #72b626;
+  text-decoration: none;
+  /* display: none; */
+}
+.Link_navs:hover .icons {
+  /* color: #147a44; */
+  color: #72b626;
+  transition: 0.5s;
+  /* color: #34af6d; */
+  /* display: none; */
+}
+
+.logos {
+  display: flex;
+  margin: 10px 0 0 10px;
+  padding-bottom: 3rem;
+}
+
+.images {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.nav-items {
+  position: relative;
+  /* top: 12px; */
+  bottom: 11px;
+  margin-left: 10px;
+}
+
+.Link_navs {
+  position: relative;
+  width: 280px;
+  font-size: 14px;
+  /* color: rgb(85, 83, 83); */
+  display: table;
+  padding: 10px;
+  color: #fff;
+  /* top: 50px; */
+}
+
+.spanNavs {
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  top: -3px;
+}
+
+.icons {
+  position: relative;
+  width: 70px;
+  height: 30px;
+  /* top: 20px; */
+  font-size: 20px;
+  text-align: center;
+}
+
+.Link_navs_logout {
+  /* position: relative; */
+  width: 280px;
+  font-size: 14px;
+  /* color: rgb(85, 83, 83); */
+  display: table;
+  padding: 10px;
+  color: #fff;
+}
+.Link_navs_logout:hover {
+  background: #eee;
+  /* border-radius: 5%; */
+  transition: 0.5s;
+  color: #72b626;
+  color: #147a44;
+  text-decoration: none;
+}
+.Link_navs_logout:hover .icons {
+  /* color: #147a44; */
+  color: #72b626;
+  transition: 0.5s;
+  /* display: none; */
+}
+
+.Link_navs_logo {
+  position: relative;
+  width: 280px;
+  font-size: 14px;
+  /* color: rgb(85, 83, 83); */
+  display: table;
+  padding: 10px;
+  color: hsl(0, 13%, 89%);
+  /* top: 10px; */
+}
+.Link_navs_logo:hover {
+  text-decoration: none;
+  color: rgb(85, 83, 83);
+}
+
+.spanNavs_logo {
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.sectionNav {
+  /* display: none; */
+  margin-top: 80px;
+}
+
+.imageLogo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.spanNavs_logo{
+  top: 7px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav li .active {
+  background: #eee !important;
+  /* border-radius: 5%; */
+  transition: 0.5s;
+  color: #72b626;
+  /* color: #147a44; */
+  text-decoration: none;
+  /* display: none; */
+}
+/* .actisve {
+  color: #72b626;
+  transition: 0.5s;
+} */

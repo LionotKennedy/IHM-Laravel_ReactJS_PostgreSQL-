@@ -1,0 +1,104 @@
+.containerCard{
+
+    /* background-color: rgba(78, 255, 24, 0.333); */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    height: 45vh !important;
+    width: 100% !important;
+    transition: 0.3s !important;
+}
+
+.testimonial__container {
+    /* width: 750px; */
+    width: 1130px;
+    transition: 0.3s !important;
+    /* margin-bottom: 300px; */
+    /* margin-bottom: 3rem; */
+}
+
+.testimonial__card {
+    /* background-color: red; */
+    padding-bottom: 30-0px;
+    background-color: #fff;
+    border: 1px  solid rgba(0, 0, 0, 0.3);
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+    transition: 0.3s !important;
+}
+
+.testimonial__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.testimonial___name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    /* misy */
+}
+
+.testimonial__description {
+    font-size: 0.813rem;
+}
+
+/* Swiper Class */
+.swiper-pagination-bullet {
+    background-color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+/* ============== RESPONSIVE APPLICATION ========== */
+@media screen and (max-width: 1251px) {
+    .testeCard {
+      width: 1000px !important;
+      transition: 0.3s !important;
+    }
+    .containerCard {
+      width: 1000px !important;
+      transition: 0.3s !important;
+    }
+  }
+  @media screen and (max-width: 1086px) {
+    .containerCard {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      position: relative !important;
+      transition: 0.3s !important;
+    }
+    .testeCard {
+      /* display: inline!important;  */
+      width: 900px !important;
+      transition: 0.3s !important;
+    }
+  }
+  @media screen and (max-width: 1030px) {
+    .testeCard {
+      width: 800px !important;
+      transition: 0.5s !important;
+    }
+  }
+  @media screen and (max-width: 969px) {
+    .testeCard {
+      transition: 0.5s !important;
+      width: 700px !important;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .testeCard {
+      transition: 0.5s !important;
+      width: 600px !important;
+      justify-content: center;
+    }
+  }
+  

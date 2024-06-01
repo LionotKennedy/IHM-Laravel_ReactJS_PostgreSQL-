@@ -1,0 +1,189 @@
+.scrore {
+    font-size: 1.5rem;
+}
+.tire {
+    font-size: 1.5rem;
+    margin-left: 50%;
+}
+
+.label {
+    font-size: 1rem;
+}
+
+.style
+{
+  display: none;
+}
+
+.jobs_card{
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 10px;
+    background: #fff;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    border: 2px solid rgb(190, 190, 190);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  }
+  .jobs_details{
+    display: flex;
+  }
+  .jobs_details .imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jobs_details .imgs i{
+    width: 70px;
+    /* display: none; */
+    font-size: 3rem;
+    margin-left: 500px;
+    padding: 10px;
+    color: rgb(82, 22, 138);
+    background: rgb(216, 205, 226);
+  }
+  .jobs_details .texts{
+    margin-left: 2.3rem;
+  }
+  .jobs_details .texts span{
+    color: rgb(116, 112, 112);
+  }
+  .jobs_salary{
+    text-align: right;
+    color: rgb(54, 54, 54);
+  }
+  .jobs_card:active{
+    border: 2px solid blueviolet;
+    transition: 0.4s;
+  }
+
+  
+  .tableMatchs {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    min-width: 100%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .theadMatchs{
+    color: #fff;
+    background: #34AF6D;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  /* .trMatchs{
+
+  } */
+
+  .thMatchs{
+    padding: 12px 15px;
+  }
+  
+  .tdMatchs{
+    padding: 12px 15px;
+  }
+
+  .addMatchs{
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #4a51d4;  
+    transition: 0.3s;
+  }
+
+  .addMatchs:hover{
+    background: #4a51d4;
+    color: #fff;
+    transition: 0.3s;
+  }
+
+  .updateMatchs{
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #34AF6D    
+  }
+
+  .updateMatchs:hover{
+    background: #34AF6D;
+    color: #fff;
+    transition: 0.9rem;
+  }
+
+  .updateDelete{
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #af3434    
+  }
+
+  .updateDelete:hover{
+    background: #af3434;
+    color: #fff;
+    transition: 0.9rem;
+  }
+
+  .headerMatch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+  }
+  .input-groupMatchs{
+    width: 35%;
+    height: 100%;
+
+    background-color: rgba(16, 176, 19, 0.333);
+    padding: 0 .8rem;
+    border-radius: 2rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: .2s;
+  }
+
+  .input-groupMatchs:hover{
+    width: 45%;
+    /* background-color: #fff8; */
+    background-color: rgba(16, 176, 19, 0.333);
+    box-shadow: 0 .1rem .4rem #0003;
+}
+
+  .inputMatchs{
+    width: 100%;
+    padding: .4rem 1.0rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    /* background: #000; */
+  }
+
+  .input-groupMatchs:hover .iconM{
+    color: #000;
+}
+.iconM{
+  color: #656363;
+}
+.logoMatchs{
+  width: 45px;
+}
+
+.addMatchs:hover .iconAddMatchs{
+  background: #4a51d4;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.iconAddMatchs{
+  color: #666;
+}

@@ -1,0 +1,161 @@
+/* img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+} */
+.imagePlayer {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.ptt{
+  /* display: none; */
+  padding-top: 20px;
+}
+
+/* .table button{
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #4AD489;
+}
+.table button:hover{
+  background: #4AD489;
+  color: #fff;
+  transition: 0.5rem;
+} */
+
+.btnt{
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #4AD489
+}
+.btnt:hover{
+  background: #4AD489;
+  color: #fff;
+  transition: 0.5rem;
+}
+
+.btntd{
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #e64e43
+}
+.btntd:hover{
+  background: #d44a4a;
+  color: #fff;
+  transition: 0.5rem;
+}
+
+.btnta{
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #434be6
+}
+.btnta:hover{
+  background: #4a51d4;
+  color: #fff;
+  transition: 0.5rem;
+}
+
+.input-groupPlayer:hover .iconP{
+  color: #000;
+}
+.iconP{
+color: #656363;
+}
+
+.iconDeleteP{
+  color: #e33838;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.iconDeleteP:hover{
+  font-size: 20px;
+  color: #121213;
+  transition: 0.2s;
+}
+.iconUpdateP{
+  margin-right: 10px;
+  color: #3e38e3;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.iconUpdateP:hover{
+ font-size: 20px;
+  color: #121213;
+  transition: 0.2s;
+}
+.iconAddP{
+  margin-right: 10px;
+  color: #3e38e3;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.iconAddP:hover{
+ font-size: 20px;
+  color: #121213;
+  transition: 0.2s;
+}
+.inputs{
+  /* display: none; */
+  width: 100%;
+  padding: .6rem 1.0rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.input-groupPlayer{
+  width: 35%;
+  height: 100%;
+  background-color: rgba(16, 176, 19, 0.333);
+  padding: 0 .8rem;
+  border-radius: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  transition: .2s;
+}
+.input-groupPlayer:hover{
+  width: 45%;
+  background-color: rgba(16, 176, 19, 0.333);
+  box-shadow: 0 .1rem .4rem #0002;
+}
+
+.deleteCof{
+  color: red !important;
+}
+
+.annulerPlayer{
+  /* background-color: rgba(15, 202, 18, 0.797) !important; */
+  background-color: #666 !important;
+}
+
+.ajouterPlayer{
+  /* background-color: linear-gradient(45deg,#011506,#34AF6D) !important; */
+  background-color: #147a44 !important;
+}
+.UpdatePlayer{
+  background-color: #147a44 !important;
+}
+
+.NamePlayer{
+  /* display: none !important; */
+  /* background-color: #147a44 !important; */
+  color: #4AD489 !important;
+  border-color: #4AD489 !important;
+}
+.colorTitle{
+  color: #147a44 !important;
+}

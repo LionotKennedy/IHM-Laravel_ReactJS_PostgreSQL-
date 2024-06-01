@@ -1,0 +1,61 @@
+.hdr
+{
+    /* position: fixed; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 0px 100px;
+    z-index: 10000;
+    /* background: red; */
+}
+
+.hdr .logo 
+{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    text-decoration: none;
+    transition: 0.6s;
+    /* display: none; */
+}
+
+.hdr .lu
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hdr .lu .il
+{
+    position: relative;
+    list-style: none;
+}
+
+.hdr .lu .il .links
+{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    /* color: #fff; */
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.5s;
+}
+.hdr .lu .il .links:hover
+{
+    color: #72b626;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+}

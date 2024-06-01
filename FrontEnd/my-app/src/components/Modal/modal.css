@@ -1,0 +1,27 @@
+.InputBases {
+    display: none;
+}
+
+/* Styling for custom file input */
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-file-upload:hover {
+    background-color: #e0e0e0;
+  }
+
+  .teste{
+    /* display: none; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+  

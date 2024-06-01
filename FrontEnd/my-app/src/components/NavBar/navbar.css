@@ -1,0 +1,245 @@
+
+/* <span style="font-family: verdana, geneva, sans-serif;">  */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"); */
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background: rgb(221, 218, 218);
+  /* background: rgb(226, 226, 226); */
+}
+.navNab{
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  width: 90px;
+
+  /* width: 280px; */
+  /* background: #e3e3e3; */
+  /* background: #fff; */
+  /* background: #73b62674; */
+  /* background: #bcffa7; */
+  /* background: #72b626; */
+  /* background: #34AF6D; */
+  /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+  /* background-image: linear-gradient(43deg, #175421 0%, #2e7540 46%, #3ea723 100%); */
+  /* background: linear-gradient(45deg,#4fa1a1, #1a0805); */
+  background: linear-gradient(45deg,#011506,#34AF6D);
+  overflow: hidden;
+  transition: 1s;
+}
+.navNab:hover{
+  width: 280px;
+  transition: 1s;
+}
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+  padding-bottom: 3rem;
+}
+
+.logo .image{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.logo .spanNav{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.Link_nav{
+  position: relative;
+  width: 280px;
+  font-size: 14px;
+  display: table;
+  padding: 10px;
+}
+.navNab .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 20px;
+  font-size: 20px;
+  color: rgb(85, 83, 83);
+  text-align: center;
+}
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+.Link_nav:hover{
+  background: #eee;
+}
+.Link_nav:hover i{
+  color: #34AF6D;
+  transition: 0.5s;
+  /* display: none; */
+}
+.logout{
+  position: absolute;
+  bottom: 20px;
+  /* bottom: 0; */
+}
+
+.containerNav{
+  display: flex;
+}
+
+/* MAin Section */
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.main-top{
+  display: flex;
+  width: 100%;
+}
+i{
+  position: absolute;
+  right: 0;
+  margin: 10px 30px;
+  color: rgb(110, 109, 109);
+  cursor: pointer;;
+}
+.main .users{
+  display: flex;
+  width: 100%;
+}
+.users .card{
+  width: 25%;
+  margin: 10px;
+  /* height: 100%; */
+  /* background: #000; */
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  /* display: none; */
+}
+.users .card .image{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.users .card .h4p{
+  text-transform: uppercase;
+}
+.users .card .pp{
+  font-size: 12px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.users .tables{
+  margin:  auto;
+}
+.users .per .spanNav{
+  padding:  5px;
+  border-radius: 10px;
+  background: rgb(223, 223, 223);
+}
+.users .tds{
+  font-size: 14px;
+  padding-right: 15px;
+}
+.users .card .buttons{
+  width: 100%;
+  margin-top: 8px;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #4AD489;
+}
+.users .card .buttons:hover{
+  background: #4AD489;
+  color: #fff;
+  transition: 0.5s;
+}
+
+/*Attendance List serction  */
+.attendance{
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.attendance-list{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+.tables .theads .trs{
+  color: #fff;
+  background: #34AF6D;
+  text-align: left;
+  font-weight: bold;
+}
+.table .ths,
+.table .tds{
+  padding: 12px 15px;
+}
+.table .tbodys .trs{
+  border-bottom: 1px solid #ddd;
+}
+.table .tbodys .trs:nth-of-type(odd){
+  background: #f3f3f3;
+}
+.table .tbodys .trs.active{
+  font-weight: bold;
+  color: #4AD489;
+}
+.table .tbodys .trs:last-of-type{
+  border-bottom: 2px solid #4AD489;
+}
+.table .buttons{
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #4AD489;
+}
+.table .buttons:hover{
+  background: #4AD489;
+  color: #fff;
+  transition: 0.5rem;
+}
+/* </span> */
+
+.icon{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.liNav{
+  justify-content: center;
+  /* display: flex; */
+  /* align-items: center; */
+  text-align: center;
+}

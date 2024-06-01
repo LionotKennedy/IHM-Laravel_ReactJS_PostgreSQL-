@@ -1,0 +1,58 @@
+## Résoudre l'erreur "429 Trop de requêtes" dans une application React
+
+**Comprendre l'erreur:**
+
+Ce code d'erreur indique que votre application effectue trop de requêtes vers le serveur dans une courte période. Le serveur limite vos requêtes pour éviter la surcharge.
+
+**Étapes de dépannage:**
+
+1. **Identifier les requêtes fréquentes:**
+    - Examinez votre code et repérez les composants ou les fonctions qui effectuent plusieurs appels d'API en succession rapide.
+    - Recherchez les endroits où vous pourriez déclencher accidentellement des requêtes inutiles (par exemple, dans des boucles ou à chaque rendu).
+
+2. **Implémenter le débouncing ou le throttling:**
+    - **Débouncing:** Retarde les requêtes suivantes jusqu'à ce qu'un certain temps se soit écoulé depuis la dernière. Utilisez une bibliothèque comme `lodash.debounce` ou une implémentation personnalisée.
+    - **Throttling:** N'autorise qu'un certain nombre de requêtes dans un délai spécifique. Vous pouvez utiliser `axios.defaults.adapter` pour configurer le throttling.
+
+Voici un exemple d'utilisation de `lodash.debounce`:
+
+```javascript
+import React, { useState, useEffect } from 'react';
+import _ from 'lodash'; // En supposant que vous avez lodash installé
+
+const debouncedFetchData = _.debounce(async () => {
+  // Votre logique d'appel d'API ici
+  const response = await fetch('http://127.0.0.1:8000/api/votre-point-de-terminaison');
+  const data = await response.json();
+  // Mettre à jour l'état avec les données
+}, 500); // Débouncer après 500 millisecondes
+
+function MyComponent() {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    debouncedFetchData(); // Appeler la fonction débouncée
+  }, []); // Tableau de dépendances vide pour récupérer les données une seule fois
+
+  // ... le reste de votre composant
+
+  return (
+    // ... votre JSX avec un rendu conditionnel basé sur les données
+  );
+}
+```
+
+3. **Optimiser les appels d'API:**
+    - Pouvez-vous combiner plusieurs requêtes en une seule plus efficace ?
+    - Envisagez de mettre en cache les données fréquemment accédées côté client (en utilisant des bibliothèques comme `react-query` ou `redux-toolkit`) pour réduire les requêtes serveur.
+
+4. **Configuration côté serveur (si applicable):**
+    - Si vous avez le contrôle du serveur, vous pourrez peut-être ajuster les paramètres de limitation de débit pour répondre aux besoins de votre application.
+
+**Conseils supplémentaires:**
+
+- Utilisez un inspecteur réseau pour surveiller les requêtes API et identifier les modèles.
+- Envisagez d'implémenter une file d'attente de requêtes globale pour gérer et prioriser les requêtes.
+- Si vous effectuez des requêtes à chaque rendu, utilisez des techniques comme la mémorisation ou `React.memo` pour éviter les rendus inutiles.
+
+En suivant ces étapes, vous devriez être en mesure de résoudre efficacement l'erreur "429 Trop de requêtes" et d'améliorer les performances de votre application React.

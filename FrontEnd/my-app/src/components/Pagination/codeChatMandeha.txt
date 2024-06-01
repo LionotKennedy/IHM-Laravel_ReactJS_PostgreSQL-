@@ -1,0 +1,54 @@
+import { Box, Pagination } from "@mui/material";
+import { useState, useEffect } from "react";
+import axios from "axios";
+
+const pageSize = 3;
+
+export default function PaginationCard() {
+  const [pagination, setPagination] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1); // Track the current page
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`/api/display-contrat`);
+        if (response.data.status === 200) {
+          setPagination(response.data.contrats);
+        }
+      } catch (error) {
+        if (error.response && error.response.status === 429) {
+          console.error("API rate limit exceeded");
+          // Display an error message to the user
+        } else {
+          console.error("Error fetching data:", error);
+        }
+      }
+    };
+  
+    fetchData();
+  }, []);
+  
+
+  const handlePageChange = (event, newPage) => {
+    setCurrentPage(newPage); // Update current page on pagination change
+  };
+
+  const displayedData = pagination.slice(
+    (currentPage - 1) * pageSize,
+    currentPage * pageSize
+  ); // Slice data for current page
+
+  return (
+    <Box justifyContent={"center"} alignItems={"center"} display={"flex"} sx={{ margin: "20px px" }}>
+      <Pagination count={Math.ceil(pagination.length / pageSize)} // Calculate total pages
+                  page={currentPage}
+                  onChange={handlePageChange} />
+      {/* Display the sliced data for the current page below the Pagination component */}
+      {displayedData.map((data, index) => (
+        <div key={index}>
+          {/* Your data rendering logic here */}
+        </div>
+      ))}
+    </Box>
+  );
+}

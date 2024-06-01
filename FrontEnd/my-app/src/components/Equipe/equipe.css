@@ -1,0 +1,157 @@
+.AddEquipe{
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #434be6;
+    transition: 0.3s;
+}
+.AddEquipe:hover {
+    background: #4a51d4;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.UpdateEquipe{
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #34AF6D
+}
+.UpdateEquipe:hover{
+    background: #34AF6D;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.deleteEquipe{
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #e33838
+}
+.deleteEquipe:hover{
+    background: #e33838;
+    color: #fff;
+    transition: 0.2s;
+}
+
+/* Aprat from that */
+
+.tableEquipe{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    min-width: 100%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.theadEquipe{
+    color: #fff;
+    background: #34AF6D;
+    text-align: left;
+    font-weight: bold;
+}
+
+.thEquipe{
+    padding: 12px 15px;
+}
+
+.tdEquipe{
+    padding: 12px 15px;
+}
+
+.input-groupEquipe{
+    width: 35%;
+    height: 100%;
+
+    background-color: rgba(16, 176, 19, 0.333);
+    padding: 0 .8rem;
+    border-radius: 2rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: .2s;
+}
+
+.input-groupEquipe:hover {
+    width: 45%;
+    /* background-color: #fff8; */
+    background-color: rgba(16, 176, 19, 0.333);
+    box-shadow: 0 .1rem .4rem #0003;
+}
+.input-groupEquipe:hover .iconE{
+    color: #000;
+}
+
+.inputEquipe{
+    width: 100%;
+    padding: .4rem 1.0rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    /* background: #000; */
+}
+
+.headerTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+}
+
+.iconE{
+    color: #656363;
+}
+
+.LogoEquipe{
+    width: 50px;
+}
+
+.iconUpdateEquipe{
+    margin-right: 25px;
+    font-size: 20px;
+    color: #3e38e3;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.iconDeleteEquipe{
+    font-size: 20px;
+    color: #e33838;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.iconUpdateEquipe:hover{
+    margin-right: 25px;
+    font-size: 16px;
+    color: #0a0a0b;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.iconDeleteEquipe:hover{
+    font-size: 16px;
+    color: #0f0e0e;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.imageEquipe{
+    width: 45px;
+}
+/* .iconAddEquipe:hover{
+    color: #fff;
+} */
+.iconAddEquipe{
+    color: #666;
+}
+
+.AddEquipe:hover .iconAddEquipe{
+    background: #4a51d4;
+    color: #fff;
+    transition: 0.3s;
+}

@@ -1,0 +1,19 @@
+            {/* <Box mt={3}>
+              <TextField
+                select
+                variant="outlined"
+                name="id_player"
+                value={contratInput.id_player}
+                // onChange={handleChange}
+                fullWidth
+                style={{ borderColor: 'purple' }}
+              >
+                {
+                  contrat.map((item) => {
+                    return (
+                      <MenuItem value={item.id_player} key={item.id_player}>{item.id_player}</MenuItem>
+                    )
+                  })
+                }
+              </TextField>
+            </Box> */}

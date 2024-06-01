@@ -1,0 +1,80 @@
+.headerEquipe
+{
+    /* position: fixed; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 0px 100px;
+    z-index: 10000;
+    /* background: yellow; */
+}
+
+.headerEquipe .logo 
+{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    text-decoration: none;
+    transition: 0.6s;
+    /* display: none; */
+}
+
+
+.headerEquipe .ulEquipe
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerEquipe .ulEquipe .liEquipe
+{
+    position: relative;
+    list-style: none;
+}
+
+.headerEquipe .ulEquipe .liEquipe .linksEquipe
+{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    /* color: #fff; */
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.5s;
+}
+
+.containerEquipec{
+    /* display: none; */
+    /* margin-bottom: 200px; */
+    height: 0vh;
+    width: 100%;
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: center; */
+    position: relative;
+    background: #000;
+}
+
+.contentEquipe{
+    height: 5vh;
+    width: 100%;
+}
+.headerEquipe .ulEquipe .liEquipe .linksEquipe:hover
+{
+    color: #72b626;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+

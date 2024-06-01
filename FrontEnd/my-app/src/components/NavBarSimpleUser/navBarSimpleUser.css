@@ -1,0 +1,23 @@
+section nav ul li .active{
+    /* color: #72b626 !important; */
+    color: #219538 !important;
+    background-color: rgb(53, 50, 50) !important;
+    border-radius: 0% !important;
+}
+
+header ul li .active{
+    color: #ffffff !important;
+    /* background-color: #72b626 !important; */
+    background-color: #219538 !important;
+    border-radius: 50% !important;
+}
+.userNav{
+    color: #ffffff !important;
+    background-color: rgb(85, 83, 83) !important;
+    border-radius: 50% !important;
+}
+.userNav:hover{
+    color: #ffffff !important;
+    background-color: #219538 !important;
+    border-radius: 50% !important;
+}

@@ -1,0 +1,205 @@
+.AddContrat {
+  padding: 6px 20px !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+  background: transparent !important;
+  border: 1px solid #4a55d4 !important;
+  transition: 0.3s !important;
+  margin-bottom: 10px;
+}
+
+.AddContrat:hover {
+  background: #4a55d4 !important;
+  color: #fff !important;
+  transition: 0.3s !important;
+}
+.AddContrat:hover .iconAddC {
+  background: #4a55d4 !important;
+  color: #fff !important;
+  transition: 0.3s !important;
+}
+
+.updateContrat {
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #34af6d;
+}
+.updateContrat:hover {
+  background: #34af6d;
+  color: #fff;
+  transition: 0.9rem;
+}
+
+.deleteContrat {
+  padding: 6px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #e33838;
+}
+.deleteContrat:hover {
+  background: #e33838;
+  color: #fff;
+  transition: 0.9rem;
+}
+
+.job_card {
+  width: 100% !important;
+  height: 6rem !important;
+  padding: 15px !important;
+  cursor: pointer !important;
+  display: flex !important;
+  border-radius: 10px !important;
+  background: #fff !important;
+  margin-bottom: 15px !important;
+  justify-content: space-between !important;
+  border: 2px solid rgb(190, 190, 190) !important;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1) !important;
+  /* display: none !important; */
+}
+
+.job_details {
+  display: flex !important;
+}
+
+.job_details .img {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.job_details .img i {
+  width: 70px !important;
+  font-size: 3rem !important;
+  margin-left: 1rem !important;
+  padding: 10px !important;
+  color: rgb(82, 22, 138) !important;
+  background: rgb(216, 205, 226) !important;
+}
+
+.job_details .text {
+  margin-left: 2.3rem !important;
+}
+
+.job_details .text span {
+  color: rgb(116, 112, 112) !important;
+}
+
+.job_card:active {
+  border: 2px solid blueviolet !important;
+  transition: 0.4s !important;
+}
+.job_salary {
+  text-align: right !important;
+  color: rgb(54, 54, 54) !important;
+}
+.job_salary span {
+  /* display: none; */
+  /* text-align: right; */
+  color: rgb(54, 54, 54) !important;
+  font-size: 15px !important;
+}
+
+.main {
+  width: 100% !important;
+  /* background-color: #121213; */
+}
+
+.invisible {
+  display: none !important;
+}
+
+.containerContrat {
+  /* display: none; */
+  /* background-color: rgba(84, 95, 82, 0.021) !important; */
+  background-color: rgba(167, 165, 165, 0.333) !important;
+  /* background-color: rgba(197, 1, 1, 0.333); */
+
+}
+
+.iconDelete {
+  color: #e33838 !important;
+  transition: 0.2s !important;
+}
+.iconDelete:hover {
+  font-size: 20px !important;
+  color: #121213 !important;
+  transition: 0.2s !important;
+}
+.iconUpdate {
+  margin-right: 10px !important;
+  color: #3e38e3 !important;
+  transition: 0.2s !important;
+}
+.iconUpdate:hover {
+  font-size: 20px !important;
+  color: #121213 !important;
+  transition: 0.2s !important;
+}
+.iconAddC {
+  color: #5b5b5c !important;
+  transition: 0.2s !important;
+}
+
+.imageContrat {
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 50% !important;
+}
+
+/* .text span {
+  color: red !important;
+} */
+
+.nameP{
+  font-size: 15px;
+  font-weight: bold;
+}
+.salaireP{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.pagination{
+  /* display: none; */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  gap: 5px;
+  
+  position: absolute;
+  bottom: 0px;
+  background-color: #e1e1e1;
+  left: 35%;
+}
+
+.pagination .pagination__link{
+  /* position: fixed;
+  align-items: center;
+  display: flex;
+  justify-content: center; */
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+.pagination .pagination__link:hover{
+  /* background-color: #72b626; */
+  /* background: linear-gradient(45deg,#011506,#34AF6D) ;; */
+  /* background-color: #34af6d84; */
+  background-color: #147a44;
+  color: #fff;
+  transition: 0.3s;
+}
+.pagination .active{
+  /* background-color: #72b626; */
+  background-color: #147a44;
+  /* background: linear-gradient(45deg,#011506,#34AF6D) ;; */
+  color: #fff;
+  transition: 0.3s;
+}

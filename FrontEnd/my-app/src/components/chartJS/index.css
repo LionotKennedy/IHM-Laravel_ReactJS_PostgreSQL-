@@ -1,0 +1,13 @@
+.containerChart{
+    /* grid-template-columns: repeat(1, 1fr); */
+    /* justify-content: center; */
+    /* column-gap: 0.1rem; */
+    /* display: inline; */
+    /* padding: 8px 15px; */
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+/* .contenu_Chart{
+} */

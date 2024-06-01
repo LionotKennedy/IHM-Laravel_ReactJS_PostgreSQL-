@@ -1,0 +1,95 @@
+            <Dialog open={openAdd} onClose={onCloseAdd} fullWidth maxWidth="sm">
+                <DialogTitle>
+                    Ajouter des Clients Modal
+                    <IconButton onClick={onCloseAdd} style={{ float: 'right' }}>
+                        <CloseIcon color="danger" />
+                    </IconButton>
+                </DialogTitle>
+                <DialogContent>
+                    <Stack spacing={2} margin={2}>
+                        <TextField
+                            variant="outlined"
+                            label="Nom"
+                            name="NameP"
+                            style={{ borderColor: 'purple' }}
+                            onChange={handleInput1}
+                            value={playerInput.NameP}
+                        />
+                        <small className='text-danger'>{errorlist.NameP}</small>
+                        <TextField
+                            variant="outlined"
+                            label="Pays"
+                            name="PaysP"
+                            style={{ borderColor: 'purple' }}
+                            onChange={handleInput1}
+                            value={playerInput.PaysP}
+                        />
+                        <TextField
+                            variant="outlined"
+                            label="Age"
+                            name="AgeP"
+                            type='number'
+                            style={{ borderColor: 'purple' }}
+                            onChange={handleInput1}
+                            value={playerInput.AgeP}
+                        />
+
+
+                        <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '30px' }}>
+                            <Box >
+                                <Box>
+                                    {/* <Typography>Coucou</Typography> */}
+                                    <FormControl name='poste' className='teste'>
+                                        <FormLabel >Selection le poste</FormLabel>
+                                        <RadioGroup
+                                            value={playerInput.PosteP}
+                                            onChange={handleInput1}
+                                            // value={choice}
+                                            // onChange={(e) => setChoice(e.target.value)}
+                                            
+                                            >
+                                        <div className='teste'>
+                                            <FormControlLabel label="Poste1" value="poste1" name='PosteP' control={<Radio />} />
+                                            <FormControlLabel label="Poste2" value="poste2" name='PosteP' control={<Radio />} />
+                                            <FormControlLabel label="Poste3" value="poste3" name='PosteP' control={<Radio />} />
+                                            <FormControlLabel label="Poste4" value="poste4" name='PosteP' control={<Radio />} />
+                                            </div>
+                                        </RadioGroup>
+                                    </FormControl>
+                                </Box>
+                                {/* you selected : {choice} */}
+                                you selected : {playerInput.PosteP}
+                            </Box>
+                        </div>
+
+
+                        <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '30px' }} >
+                            <TextField type='number'
+                                onChange={handleInput1}
+                                value={playerInput.NombreP1}
+                                name='NombreP1' color='success' label="Nombre" />
+
+                            <TextField type='number'
+                                onChange={handleInput1}
+                                value={playerInput.NombreP2}
+                                name='NombreP2' color='success' label="Nombre" />
+
+                            <TextField type='number'
+                                onChange={handleInput1}
+                                value={playerInput.NombreP3}
+                                name='NombreP3' color='success' label="Nombre" />
+                        </div>
+
+                        {/* Styled file input */}
+                        <label htmlFor="file-upload" className="custom-file-upload" style={{ marginTop: '30px' }} >
+                            <input id="file-upload" onChange={handImage} type="file" name='ImageP' />
+                            Upload File
+                        </label>
+
+                        <Button style={{ marginTop: '50px' }} color="success" variant="contained" onClick={handleSubmit}>
+                            Valider
+                        </Button>
+                    </Stack>
+                </DialogContent>
+                <DialogActions></DialogActions>
+            </Dialog>

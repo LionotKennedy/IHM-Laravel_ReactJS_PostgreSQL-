@@ -1,0 +1,8 @@
+.invisible {
+    display: none;
+}
+.contentTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

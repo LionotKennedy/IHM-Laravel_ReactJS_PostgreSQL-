@@ -1,0 +1,119 @@
+.tableEntr{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    min-width: 100%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.theadEntr{
+    color: #fff;
+    background: #34AF6D;
+    text-align: left;
+    font-weight: bold;
+}
+
+.thEntr{
+    padding: 12px 15px;
+}
+
+.tdEntr{
+    padding: 12px 15px;
+}
+
+.addEntr{
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #434be6
+}
+.addEntr:hover{
+    background: #4a51d4;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.updateEntr{
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #34AF6D
+}
+.updateEntr:hover{
+    background: #34AF6D;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.deleteEntr{
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #e33838
+}
+.deleteEntr:hover{
+    background: #e33838;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.input-groupEntrain{
+    width: 35%;
+    height: 100%;
+
+    background-color: rgba(16, 176, 19, 0.333);
+    padding: 0 .8rem;
+    border-radius: 2rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: .2s;
+}
+
+.input-groupEntrain:hover{
+    width: 45%;
+    /* background-color: #fff8; */
+    background-color: rgba(16, 176, 19, 0.333);
+    box-shadow: 0 .1rem .4rem #0003;
+}
+
+.inputEntrain{
+    width: 100%;
+    padding: .4rem 1.0rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.headerEntrain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+}
+
+.input-groupEntrain:hover .iconEn{
+    color: #000;
+}
+.iconEn{
+  color: #656363;
+}
+.logoEntrainement{
+    width: 45px;
+}
+
+.iconAddEntrainment{
+    color: #666;
+    transition: 0.3s;
+}
+.addEntr:hover .iconAddEntrainment{
+    background: #4a51d4;
+    color: #fff;
+    transition: 0.3s;
+}
